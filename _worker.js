@@ -11,8 +11,8 @@ let addresses = [
 
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
+	'https://raw.githubusercontent.com/MaJiD-PaGeS/CT-SUB-IP/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	//'https://raw.githubusercontent.com/MaJiD-PaGeS/CT-SUB-IP/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
@@ -24,28 +24,28 @@ let addressesnotls = [
 
 // 设置优选noTLS地址api接口
 let addressesnotlsapi = [
-	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt',
+	'https://raw.githubusercontent.com/MaJiD-PaGeS/vmess-sub/main/addressesapi.txt',
 ];
 
 let DLS = 8;//速度下限
 let addressescsv = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
+	//'https://raw.githubusercontent.com/MaJiD-PaGeS/CT-SUB-IP/main/addressescsv.csv.csv', //iptest测速结果文件。
 ];
 
 let subconverter = "apiurl.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅配置文件
+let subconfig = "https://raw.githubusercontent.com/MaJiD-PaGeS/CT-SUB-IP/main/ACL4SSR_Online_Full_MultiMode.ini"; //订阅配置文件
 let noTLS = true; // false
 let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
 let ChatID =''; //可以为空，或者@userinfobot中获取，/start
-let vmessLinks = [ //本地CFcdnVmess节点池
+let vmessLinks = [ //本地vmess-sub节点池
 	//'vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk5MIiwNCiAgImFkZCI6ICJjZi4wOTAyMjcueHl6IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjA2MTk1YjViLTM4MTUtNGEwNy05NmY3LTQ3ZWVmYmIxYjE0MyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAidXJueGV3enZoLnNpdGUiLA0KICAicGF0aCI6ICIva3dobXZ3cyIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJ1cm54ZXd6dmguc2l0ZSIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiDQp9',
 ];
-let vmessLinksURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/vmesslinks';//CFcdnVmess节点池URL
+let vmessLinksURL = 'https://raw.githubusercontent.com/MaJiD-PaGeS/vmess-sub/main/vmesslinks';//lvmess-sub节点池URL
 let proxyhosts = [//本地代理域名池
 	//'ppfv2tl9veojd-maillazy.pages.dev',
 ];
-let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';//在线代理域名池URL
-let FileName = 'CFcdnVmess2sub';
+let proxyhostsURL = 'https://raw.githubusercontent.com/MaJiD-PaGeS/vmess-sub/main/proxyhosts';//在线代理域名池URL
+let FileName = 'vmess-sub';
 let SUBUpdateTime = 6; 
 let total = 99;//PB
 //let timestamp = now;
@@ -393,19 +393,25 @@ export default {
 			if (!host || !uuid) {
 				const workerUrl = url.origin + url.pathname;
 				const responseText = `
-			缺少必填参数：host 和 uuid
-			Missing required parameters: host and uuid
-			پارامترهای ضروری وارد نشده: هاست و یوآی‌دی
-			
-			${workerUrl}?cc=[vmess name]&host=[your host]&uuid=[your uuid]&path=[your path]
-			
-			
-			
-			
-			
-			
-				
-				https://github.com/cmliu/CFcdnVmess2sub
+《THE PROGRAMMER》
+
+
+《ADMIN》 : 《MaJiDcT》
+
+
+《CHANNEL》 : 《VPNCTVIP》 
+
+
+《INSTAGRAM》 : 《VPN.CT》
+
+
+《ADMIN》 :《TELEGRAM》 : 《CT8CT》
+
+
+《 SUBVLESS.GOLDUKK.EU.ORG/VPN.CT 》
+
+
+《UPDATE............》
 				`;
 			
 				return new Response(responseText, {
